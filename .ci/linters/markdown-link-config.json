@@ -1,23 +1,23 @@
 {
-  "baseUrl": "https://github.com/InfosisARG/infrastructure",
+  "baseUrl": "https://github.com/InfosisARG/commitlint-config",
   "ignorePatterns": [
     {
       "pattern": "^https://infosisglobal.com"
     },
     {
-      "pattern": "^https://github.com/InfosisARG/infrastructure"
+      "pattern": "^https://github.com/InfosisARG/commitlint-config"
     },
     {
-      "pattern": "^https://github.com/InfosisARG/infrastructure/releases.*$"
+      "pattern": "^https://github.com/InfosisARG/commitlint-config/releases.*$"
     },
     {
-      "pattern": "^https://github.com/InfosisARG/infrastructure/pulls.*$"
+      "pattern": "^https://github.com/InfosisARG/commitlint-config/pulls.*$"
     },
     {
-      "pattern": "^https://github.com/InfosisARG/infrastructure/actions.*$"
+      "pattern": "^https://github.com/InfosisARG/commitlint-config/actions.*$"
     },
     {
-      "pattern": "^https://github.com/InfosisARG/infrastructure/issues.*$"
+      "pattern": "^https://github.com/InfosisARG/commitlint-config/issues.*$"
     }
   ],
   "replacementPatterns": [
