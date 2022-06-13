@@ -1,0 +1,33 @@
+{
+  "baseUrl": "https://github.com/InfosisARG/infrastructure",
+  "ignorePatterns": [
+    {
+      "pattern": "^https://infosisglobal.com"
+    },
+    {
+      "pattern": "^https://github.com/InfosisARG/infrastructure"
+    },
+    {
+      "pattern": "^https://github.com/InfosisARG/infrastructure/releases.*$"
+    },
+    {
+      "pattern": "^https://github.com/InfosisARG/infrastructure/pulls.*$"
+    },
+    {
+      "pattern": "^https://github.com/InfosisARG/infrastructure/actions.*$"
+    },
+    {
+      "pattern": "^https://github.com/InfosisARG/infrastructure/issues.*$"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/docs",
+      "replacement": "{{BASEURL}}/docs"
+    }
+  ],
+  "timeout": "20s",
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206]
+}
