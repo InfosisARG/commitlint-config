@@ -4,6 +4,9 @@ exclude: >
   (?x)^(
     ^(\/|)vendor\/(.*?)$|
     .+\.node_modules\/.*$|
+    .+\.external_modules.*$|
+    .+\.terraform.*$|
+    .+\.venv.*$|
     .+\.lock$|
   )$
 
@@ -13,6 +16,11 @@ repos:
     hooks:
       - id: codespell
         args: [--ignore-words=.codespell-ignores]
+        exclude: >
+          (?x)^(
+            go.mod|
+            go.sum|
+          )$
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v8.0.0
     hooks:
@@ -55,7 +63,12 @@ repos:
       - id: markdown-link-check
         args:
           - --config=.ci/linters/markdown-link-config.json
-        exclude: \.tpl.md$
+        exclude: >
+          (?x)^(
+            docs\/include\/terraform.md$|
+            .+\.tpl.md$|
+          )$
+
       - id: shellcheck
         exclude: >
           (?x)^(
@@ -63,27 +76,7 @@ repos:
             .+\.tpl.sh$|
           )$
         args:
-          - --exclude=SC1071,SC1073,SC2068
-      - id: validate-toml
-      - id: no-go-testing
-      - id: golangci-lint
-        args:
-          - --fix
-          - --config=.ci/linters/.golangci.yml
-      - id: terraform-docs
-        args:
-          - '--output-file=docs/include/terraform.md'
-          - '--output-mode=replace'
-
-      - id: terraform-tflint
-        args:
-          - '--config=.ci/linters/.tflint.hcl'
-      - id: terragrunt-fmt
-      - id: terraform-fmt
-      - id: terraform-tfsec
-        args:
-          - --exclude=github-repositories-private
-      - id: checkov
+          - --exclude=SC1072,SC1073,SC2068
       - id: gitleaks
         args:
           - --path=.
@@ -100,3 +93,7 @@ repos:
       - id: checkov
         args:
           - --config-file=.ci/linters/checkov.yml
+        exclude: >
+          (?x)^(
+            .+\.terraform.*$|
+          )$

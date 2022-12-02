@@ -1,7 +1,6 @@
 <!-- Space: Projects -->
 <!-- Parent: CommitlintConfig -->
 <!-- Title: Commands CommitlintConfig -->
-
 <!-- Label: CommitlintConfig -->
 <!-- Label: Project -->
 <!-- Label: Commands -->

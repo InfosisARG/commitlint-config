@@ -1,3 +1,11 @@
+<!-- Space: Projects -->
+<!-- Parent: CommitlintConfig -->
+<!-- Title: Security CommitlintConfig -->
+<!-- Label: CommitlintConfig -->
+<!-- Label: Security -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
+
 # Security Policy
 
 ## Reporting a Security Bug

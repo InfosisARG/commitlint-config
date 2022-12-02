@@ -4,12 +4,9 @@
   "description": "commitlint-config for git commit",
   "author": "Luis Mayta <slovacus@gmail.com>",
   "license": "LGPL-3.0",
-  "engines": {
-    "node": ">=14"
-  },
   "main": "commitlint.config.js",
   "scripts": {
-    "build": "tsc -p ./",
+    "build": "./node_modules/.bin/tsc -p",
     "build:tool": "yarn run build ./tools/",
     "clean": "rimraf -rf dist",
     "clean:all": "yarn clean:cache && yarn clean:build:all && yarn clean node_modules",
@@ -25,9 +22,9 @@
     "ncu": "ncu -u --target minor",
     "ncu:patch": "ncu -u --target patch",
     "prebuild": "yarn run clean",
-    "prettier": "prettier --config=.ci/linters/prettier.config.js --ignore-path=.ci/linters/.prettierignore --list-different",
+    "prettier": "prettier --config=.ci/linters/prettier.config.js --ignore-path=.ci/linters/.prettierignore",
     "prettier:fix": "yarn prettier:lint --write=true",
-    "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false"
+    "prettier:lint": "yarn prettier '**/*.{js?(on),ts?(x),scss,md,y?(a)ml,gql,graphql?(s),less,mjml}' --write=false --list-different"
   },
   "publishConfig": {
     "access": "public",

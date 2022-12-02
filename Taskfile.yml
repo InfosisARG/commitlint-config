@@ -6,18 +6,13 @@ includes:
   python: ./provision/task/python.yml
   yarn: ./provision/task/yarn.yml
   git: ./provision/task/git.yml
-  go: ./provision/task/go.yml
   docs: ./provision/task/docs.yml
   docker: ./provision/task/docker.yml
-  gitflow: ./provision/task/gitflow.yml
   version: ./provision/task/version.yml
   plantuml: ./provision/task/plantuml.yml
   prettier: ./provision/task/prettier.yml
   sonar: ./provision/task/sonar.yml
   diagrams: ./provision/diagrams/Taskfile.yml
-  sops: ./provision/task/sops.yml
-  terragrunt: ./provision/task/terragrunt.yml
-  ssh: ./provision/task/ssh.yml
 
 env:
   DOCKER:
@@ -39,18 +34,23 @@ dotenv:
 
 vars:
   PROJECT_NAME: commitlint-config
-  ORGANIZATION: infosisglobal
+  GROUP_NAME: InfosisARG
+  ORGANIZATION: InfosisARG
   REVIEWERS: luismayta
-  PYTHON_VERSION: 3.9.2
+  PYTHON_VERSION: 3.10.6
+  NODE_VERSION: 16.6.1
   GIT_IGNORES: python,node,go,zsh,sonar,terraform,linux
+  GOLANGCI_VERSION: 1.42.0
   README_FILE: README.md
-  GIT_IGNORES_CUSTOM: >-
+  GIT_IGNORES_CUSTOM: |
     bin
     .scannerwork
     .secrets
     TMP_CHANGELOG.md
     .task
+    .terraform.lock.hcl
     *.lock.hcl
+    *.zip
     .external_modules
 
 tasks:
@@ -81,10 +81,6 @@ tasks:
       - changelog:check
       - git:check
       - docs:check
-      - sops:check
-      - yarn:check
-      - ssh:check
-      - terragrunt:check
 
   readme:
     run: once
@@ -103,6 +99,13 @@ tasks:
     desc: Execute prettier files
     cmds:
       - task: prettier:all
+
+  upgrade:
+    run: once
+    desc: Execute upgrade packages
+    cmds:
+      - >-
+        pipenv run pre-commit autoupdate
 
   setup:
     desc: Setup dependences of project
