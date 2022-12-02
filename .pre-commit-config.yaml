@@ -27,8 +27,6 @@ repos:
       - id: commitlint
         stages: [commit-msg]
         additional_dependencies: ['@hadenlabs/commitlint-config']
-        args:
-          - --config=.ci/linters/.commitlintrc.json
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.3.0
     hooks:
