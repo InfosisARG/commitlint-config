@@ -12,13 +12,21 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/InfosisARG/commitlint-config?style=flat-square)](https://github.com/InfosisARG/commitlint-config/releases/latest) [![Lint](https://img.shields.io/github/workflow/status/InfosisARG/commitlint-config/lint-code)](https://github.com/InfosisARG/commitlint-config/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com) [![Terraform Version](https://img.shields.io/badge/terraform-1.x%20|%200.15%20|%200.14%20|%200.13%20|%200.12.20+-623CE4.svg?logo=terraform)](https://github.com/hashicorp/terraform/releases) [![AWS Provider Version](https://img.shields.io/badge/AWS-3%20and%202.0+-F8991D.svg?logo=terraform)](https://github.com/terraform-providers/terraform-provider-aws/releases)
+[![Latest Release](https://img.shields.io/github/release/InfosisARG/commitlint-config)](https://github.com/InfosisARG/commitlint-config/releases) [![Lint](https://img.shields.io/github/workflow/status/InfosisARG/commitlint-config/lint-code)](https://github.com/InfosisARG/commitlint-config/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/InfosisARG/commitlint-config/ci)](https://github.com/InfosisARG/commitlint-config/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/InfosisARG/commitlint-config/test)](https://github.com/InfosisARG/commitlint-config/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # commitlint-config
 
 ![commitlint-config](docs/images/diagrams/architecture/main.png)
 
-Commitlint configuration
+commitlint-config for project
+
+## Requirements
+
+This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+- [gomplate](https://github.com/hairyhenderson/gomplate)
+- [python](https://www.python.org)
+- [taskfile](https://github.com/go-task/task)
 
 ## Installation
 
@@ -78,7 +86,6 @@ Add to `package.json` next section:
 <!-- Space: Projects -->
 <!-- Parent: CommitlintConfig -->
 <!-- Title: Examples CommitlintConfig -->
-
 <!-- Label: Examples -->
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->

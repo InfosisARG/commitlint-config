@@ -1,7 +1,6 @@
-<!-- Space: CommitlintConfig -->
-<!-- Parent: Project -->
-<!-- Title: Project Releasing -->
-
+<!-- Space: Projects -->
+<!-- Parent: CommitlintConfig -->
+<!-- Title: Releasing CommitlintConfig -->
 <!-- Label: CommitlintConfig -->
 <!-- Label: Project -->
 <!-- Label: Releasing -->

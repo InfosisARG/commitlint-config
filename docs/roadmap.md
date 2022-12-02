@@ -1,9 +1,8 @@
-<!-- Space: CommitlintConfig -->
-<!-- Parent: Project -->
-<!-- Title: Project Roadmap -->
-
+<!-- Space: Projects -->
+<!-- Parent: CommitlintConfig -->
+<!-- Title: Roadmap CommitlintConfig -->
 <!-- Label: Roadmap -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 <!-- Macro: :todo:

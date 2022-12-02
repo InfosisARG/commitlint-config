@@ -223,11 +223,19 @@ title = "gitleaks config"
     description = "Files with keys and credentials"
     file = '''(?i)(id_rsa|passwd|id_rsa.pub|pgpass)$'''
     tags = ["key", "files"]
+    [rules.allowlist]
+        description = "ignore some"
+        files = ['''(.*pub|env)$''']
 
 [[rules]]
     description = "Extension Files with keys and credentials"
     file = '''(.*?)(pub|pem|ppk|key)$'''
     tags = ["key", "files"]
+    [rules.allowlist]
+        description = "ignore file test"
+        files = [
+          '''.*-test.*$''',
+        ]
 
 # Global allowlist
 [allowlist]
@@ -247,10 +255,17 @@ title = "gitleaks config"
     '''^vendor/(.*?)$''',
     '''^sonar-project.properties$''',
     '''^test/fixtures/keys/.*-test.*$''',
+    '''^node_modules/(.*?)$''',
   ]
 
 [whitelist]
   description = "image and html allowlists"
+  paths = [
+    '''^vendor/(.*?)$''',
+    '''^node_modules/(.*?)$''',
+    '''^test/fixtures/keys/(.*?)$''',
+  ]
+
   files = [
     '''(.*?)(jpg|gif|png|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2|eot|lock)$''',
     '''^\.gitignore$''',
@@ -258,8 +273,5 @@ title = "gitleaks config"
     '''^\.gitignore$''',
     '''^yarn.lock$''',
     '''^sonar-project.properties$''',
-  ]
-  paths = [
-    '''^vendor/(.*?)$''',
-    '''^node_modules/(.*?)$''',
+    '''^test/fixtures/keys/.*-test.*$''',
   ]
