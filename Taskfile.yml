@@ -87,6 +87,7 @@ vars:
     .task
     .terraform.lock.hcl
     *.lock.hcl
+    *.lock
     *.zip
     .external_modules
 
