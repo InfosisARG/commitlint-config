@@ -90,7 +90,7 @@ Add to `package.json` next section:
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### common
+### Common
 
 ## Help
 
@@ -119,7 +119,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2022 [Infosis Global](https://infosisglobal.com)
+Copyright © 2018-2025 [Infosis Global](https://infosisglobal.com)
 
 ## Trademarks
 
