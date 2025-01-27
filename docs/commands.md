@@ -9,7 +9,7 @@
 
 # Commands
 
-## Pipenv
+## Poetry
 
 ## Taskfile
 
@@ -18,7 +18,7 @@
 #### Sync Markdown with confluence
 
 ```{.bash}
-task mark:sync
+task confluence:sync:all
 ```
 
 ### Python
