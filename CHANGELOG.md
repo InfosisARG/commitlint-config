@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
+<a name="0.2.1"></a>
+
+## [0.2.1](https://github.com/infosisarg/commitlint-config/compare/0.2.0...0.2.1)
+
+> 2025-01-27
+
+### ✨ Features
+
+- enabled sentence case on subject ([#9](https://github.com/infosisarg/commitlint-config/issues/9))
+
 <a name="0.2.0"></a>
 
 ## [0.2.0](https://github.com/infosisarg/commitlint-config/compare/0.1.0...0.2.0)
