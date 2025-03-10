@@ -26,12 +26,16 @@ module.exports = {
         "docs",
         "feat",
         "fix",
+        "hotfix",
         "perf",
         "refactor",
         "revert",
         "style",
         "test",
-        "sample"
+        "sample",
+        "package",
+        "wip",
+        "deprecate"
       ]
     ]
   }
