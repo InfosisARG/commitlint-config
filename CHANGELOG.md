@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
+<a name="0.2.2"></a>
+
+## [0.2.2](https://github.com/infosisarg/commitlint-config/compare/0.2.1...0.2.2)
+
+> 2025-03-10
+
+### ✨ Features
+
+- AR-2366 implement types using goji
+
 <a name="0.2.1"></a>
 
 ## [0.2.1](https://github.com/infosisarg/commitlint-config/compare/0.2.0...0.2.1)
@@ -18,7 +28,7 @@ All notable changes to this project will be documented in this file. This file u
 
 > 2025-01-27
 
-### ♻ Code Refactoring
+### 🎨 Code Refactoring
 
 - implement configuration for editor config ([#8](https://github.com/infosisarg/commitlint-config/issues/8))
 - change packages versions ([#8](https://github.com/infosisarg/commitlint-config/issues/8))
@@ -48,6 +58,6 @@ All notable changes to this project will be documented in this file. This file u
 - implement task actions ([#1](https://github.com/infosisarg/commitlint-config/issues/1))
 - implement configuration lints code ([#1](https://github.com/infosisarg/commitlint-config/issues/1))
 
-### ♻ Code Refactoring
+### 🎨 Code Refactoring
 
 - structure project to standard ([#4](https://github.com/infosisarg/commitlint-config/issues/4))

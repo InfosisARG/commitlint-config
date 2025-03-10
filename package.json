@@ -1,6 +1,6 @@
 {
   "name": "@infosisarg/commitlint-config",
-  "version": "0.2.1",
+  "version": "0.2.2",
 	"description": "commitlint-config for git commit",
 	"author": "Luis Mayta <lmayta@infosis.tech>",
 	"license": "LGPL-3.0",
